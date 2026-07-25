@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Farhan Shaikh — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="noise"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Farhan</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-dot"></div>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#credentials" onclick="closeMobileNav()">Credentials</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-main">
+    <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span>Web Developer &amp; Software Engineer — Mumbai</span></div>
+    <h1 class="hero-name"><span class="n-first">Farhan</span><span class="n-last">Shaikh</span></h1>
+    <p class="hero-desc">I build fast, responsive, and purposeful digital experiences. From pixel-perfect frontends to scalable backend logic.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-fill">Get in Touch</a>
+      <a href="#" class="btn-line" onclick="alert('CV coming soon!');return false;">Download CV ↗</a>
+    </div>
+  </div>
+  <div class="hero-footer">
+    <div class="hero-stat"><span class="hero-stat-num">8+</span><span class="hero-stat-label">Certifications</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">3mo</span><span class="hero-stat-label">Industry Exp.</span></div>
+    <div class="hero-stat"><span class="hero-stat-num">6+</span><span class="hero-stat-label">Technologies</span></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">HTML &nbsp;·&nbsp;</span><span class="marquee-item">CSS &nbsp;·&nbsp;</span><span class="marquee-item">JavaScript &nbsp;·&nbsp;</span><span class="marquee-item">Python &nbsp;·&nbsp;</span><span class="marquee-item">WordPress &nbsp;·&nbsp;</span><span class="marquee-item">Oracle Certified &nbsp;·&nbsp;</span><span class="marquee-item">Google Cloud &nbsp;·&nbsp;</span><span class="marquee-item">PixelEdge Intern &nbsp;·&nbsp;</span><span class="marquee-item">UI/UX Thinking &nbsp;·&nbsp;</span>
+    <span class="marquee-item">HTML &nbsp;·&nbsp;</span><span class="marquee-item">CSS &nbsp;·&nbsp;</span><span class="marquee-item">JavaScript &nbsp;·&nbsp;</span><span class="marquee-item">Python &nbsp;·&nbsp;</span><span class="marquee-item">WordPress &nbsp;·&nbsp;</span><span class="marquee-item">Oracle Certified &nbsp;·&nbsp;</span><span class="marquee-item">Google Cloud &nbsp;·&nbsp;</span><span class="marquee-item">PixelEdge Intern &nbsp;·&nbsp;</span><span class="marquee-item">UI/UX Thinking &nbsp;·&nbsp;</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left reveal">
+    <div class="about-label">About</div>
+    <h2 class="about-heading">Building with <span>intention</span> and craft</h2>
+    <div class="about-body">
+      <p>I'm a <strong>Web Developer &amp; Software Engineer</strong> based in Mumbai, currently pursuing my B.Sc. in Information Technology at Mumbai University.</p>
+      <p>I spent 3 months as a <strong>Web Developer Intern at PixelEdge</strong>, where I built production websites for real clients using HTML, CSS, JavaScript, and WordPress — from design briefing to live deployment.</p>
+      <p>I hold <strong>Oracle Cloud Infrastructure certifications</strong> and have earned <strong>Google Cloud Skill Badges</strong> — because I believe credentials should reflect real learning, not just checkbox ticking.</p>
+    </div>
+  </div>
+  <div class="about-right reveal">
+    <div class="about-card"><div><div class="about-card-num">01</div><div class="about-card-title">Frontend Development</div><div class="about-card-sub">Responsive, semantic, and pixel-precise interfaces built with HTML, CSS &amp; JS</div></div><div class="about-card-arrow">↗</div></div>
+    <div class="about-card"><div><div class="about-card-num">02</div><div class="about-card-title">WordPress &amp; CMS</div><div class="about-card-sub">Custom themes, real client projects, full deployment lifecycle</div></div><div class="about-card-arrow">↗</div></div>
+    <div class="about-card"><div><div class="about-card-num">03</div><div class="about-card-title">Backend &amp; Logic</div><div class="about-card-sub">Python scripting, C programming, cloud fundamentals via Oracle &amp; Google</div></div><div class="about-card-arrow">↗</div></div>
+    <div class="about-card"><div><div class="about-card-num">04</div><div class="about-card-title">Cloud &amp; Data</div><div class="about-card-sub">OCI AI Foundations, Data Science, Google Cloud networking &amp; ML APIs</div></div><div class="about-card-arrow">↗</div></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-header reveal">
+    <div class="skills-title">Skills &amp; Stack</div>
+    <div class="skills-count">06 Technologies</div>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-cell"><div class="sk-num">01</div><div class="sk-name">HTML</div><div class="sk-type">Markup · Semantic · Accessibility</div><div class="sk-bar"><div class="sk-bar-fill" data-w="92"></div></div></div>
+    <div class="skill-cell"><div class="sk-num">02</div><div class="sk-name">CSS</div><div class="sk-type">Layouts · Animations · Responsive</div><div class="sk-bar"><div class="sk-bar-fill" data-w="88"></div></div></div>
+    <div class="skill-cell"><div class="sk-num">03</div><div class="sk-name">JavaScript</div><div class="sk-type">ES6+ · DOM · Interactivity</div><div class="sk-bar"><div class="sk-bar-fill" data-w="80"></div></div></div>
+    <div class="skill-cell"><div class="sk-num">04</div><div class="sk-name">Python</div><div class="sk-type">Scripting · Automation · Logic</div><div class="sk-bar"><div class="sk-bar-fill" data-w="72"></div></div></div>
+    <div class="skill-cell"><div class="sk-num">05</div><div class="sk-name">C</div><div class="sk-type">Systems · Memory · Fundamentals</div><div class="sk-bar"><div class="sk-bar-fill" data-w="65"></div></div></div>
+    <div class="skill-cell"><div class="sk-num">06</div><div class="sk-name">WordPress</div><div class="sk-type">CMS · Themes · Client Sites</div><div class="sk-bar"><div class="sk-bar-fill" data-w="85"></div></div></div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials">
+  <div class="cred-header reveal">
+    <div class="about-label">Credentials</div>
+    <div class="cred-title">Education, Experience &amp; Certifications</div>
+  </div>
+
+  <div class="cred-block reveal">
+    <div class="cred-section-label">
+      <span class="csl-index">01</span><div class="csl-line"></div><span class="csl-name">Education</span>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-deg">B.Sc. · Information Technology</div>
+        <div class="edu-school">Mumbai University</div>
+        <div class="edu-sub">Bachelor of Science in Information Technology</div>
+        <span class="edu-year">2025 – 2028</span>
+      </div>
+      <div class="edu-card">
+        <div class="edu-deg">HSC · Higher Secondary</div>
+        <div class="edu-school">Mumbai University</div>
+        <div class="edu-sub">Higher Secondary Certificate</div>
+        <span class="edu-year">2023 – 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cred-block reveal">
+    <div class="cred-section-label">
+      <span class="csl-index">02</span><div class="csl-line"></div><span class="csl-name">Experience</span>
+    </div>
+    <div class="exp-card">
+      <div>
+        <div class="exp-role">Web Developer Intern</div>
+        <div class="exp-company">PixelEdge</div>
+        <div class="exp-tags">
+          <span class="exp-tag">HTML</span><span class="exp-tag">CSS</span><span class="exp-tag">JavaScript</span><span class="exp-tag">WordPress</span>
+        </div>
+        <div class="exp-desc">Built responsive client websites from design briefing to live deployment. Worked on real production projects handling both frontend development and WordPress CMS integration.</div>
+      </div>
+      <div class="exp-right">
+        <span class="exp-pill">Mar – Jun 2025</span>
+        <div class="exp-type">Internship</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cred-block reveal">
+    <div class="cred-section-label">
+      <span class="csl-index">03</span><div class="csl-line"></div><span class="csl-name">Certifications</span>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-cell">
+        <div class="cc-num">01</div>
+        <div class="cc-issuer">Oracle Cloud Infrastructure</div>
+        <div class="cc-name">OCI AI Foundations Associate</div>
+        <div class="cc-bar"></div>
+        <div class="cc-desc">Core concepts of AI &amp; ML on Oracle Cloud — covers models, use cases, and Oracle's AI services portfolio.</div>
+      </div>
+      <div class="cert-cell">
+        <div class="cc-num">02</div>
+        <div class="cc-issuer">Oracle Cloud Infrastructure</div>
+        <div class="cc-name">OCI 2025 Data Science Professional</div>
+        <div class="cc-bar"></div>
+        <div class="cc-desc">End-to-end data science on OCI — model training, building pipelines, deployment, and lifecycle monitoring.</div>
+      </div>
+    </div>
+    <button class="more-btn" onclick="openModal()">View All 8 Certificates ↗</button>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="certOverlay" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()" id="modalBox">
+    <div class="modal-drag-handle"><span></span></div>
+    <div class="modal-header">
+      <div><div class="modal-title-text">Certifications</div><div class="modal-subtitle">8 Certificates Earned</div></div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-cert-grid">
+      <div class="m-cert-card"><div class="mc-num">01</div><div class="mc-issuer">Oracle Cloud Infrastructure</div><div class="mc-name">OCI AI Foundations Associate</div><div class="mc-bar"></div><div class="mc-desc">Core AI &amp; ML concepts, Oracle Cloud AI services and foundational model knowledge.</div></div>
+      <div class="m-cert-card"><div class="mc-num">02</div><div class="mc-issuer">Oracle Cloud Infrastructure</div><div class="mc-name">OCI 2025 Data Science Professional</div><div class="mc-bar"></div><div class="mc-desc">Full data science lifecycle on OCI — build, train, deploy and monitor ML models in production.</div></div>
+      <div class="m-cert-card"><div class="mc-num">03</div><div class="mc-issuer">Google Cloud</div><div class="mc-name">Build a Data Mesh with Dataplex</div><div class="mc-bar"></div><div class="mc-desc">Distributed data governance &amp; asset management across domains using Google Cloud Dataplex.</div></div>
+      <div class="m-cert-card"><div class="mc-num">04</div><div class="mc-issuer">Google Cloud</div><div class="mc-name">Use ML APIs on Google Cloud</div><div class="mc-bar"></div><div class="mc-desc">Integrating pre-trained ML APIs — Vision, NLP, Translation — into real cloud applications.</div></div>
+      <div class="m-cert-card"><div class="mc-num">05</div><div class="mc-issuer">Google Cloud</div><div class="mc-name">Set Up a Google Cloud Network</div><div class="mc-bar"></div><div class="mc-desc">VPC setup, subnets, firewall rules and load balancing for scalable cloud network infrastructure.</div></div>
+      <div class="m-cert-card"><div class="mc-num">06</div><div class="mc-issuer">IBM SkillsBuild</div><div class="mc-name">Data Analysis with Python</div><div class="mc-bar"></div><div class="mc-desc">Hands-on data analysis with Python — cleaning datasets, building visualizations, and drawing insights.</div></div>
+      <div class="m-cert-card"><div class="mc-num">07</div><div class="mc-issuer">Simplilearn</div><div class="mc-name">Introduction to Generative AI</div><div class="mc-bar"></div><div class="mc-desc">Foundations of Generative AI — foundation models, prompting, and how hallucinations occur.</div></div>
+      <div class="m-cert-card"><div class="mc-num">08</div><div class="mc-issuer">Forage</div><div class="mc-name">Deloitte Australia — Data Analytics Job Simulation</div><div class="mc-bar"></div><div class="mc-desc">Virtual job simulation — data analysis &amp; forensic technology tasks modeled on real Deloitte work.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left reveal">
+    <div class="c-label">Contact</div>
+    <h2 class="contact-heading">Let's work<span>together.</span></h2>
+    <p class="contact-sub">Available for internships, freelance projects, and collaborations. Drop me a message — I respond fast.</p>
+  </div>
+  <div class="contact-right reveal">
+    <a href="mailto:mdfarhanjs@gmail.com" class="contact-item"><div><div class="ci-platform">Email</div><div class="ci-value">mdfarhanjs@gmail.com</div></div><div class="ci-arrow">↗</div></a>
+    <a href="https://www.linkedin.com/in/farhan-shaikh-830134376" target="_blank" class="contact-item"><div><div class="ci-platform">LinkedIn</div><div class="ci-value">Farhan Shaikh</div></div><div class="ci-arrow">↗</div></a>
+    <a href="https://www.instagram.com/mdfarhanjs" target="_blank" class="contact-item"><div><div class="ci-platform">Instagram</div><div class="ci-value">@mdfarhanjs</div></div><div class="ci-arrow">↗</div></a>
+  </div>
+</section>
+
+<footer>
+  <div class="f-left">© 2025 Farhan Shaikh — All Rights Reserved</div>
+  <div class="f-right">Built in Mumbai <span>·</span> Web Developer &amp; SE</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
